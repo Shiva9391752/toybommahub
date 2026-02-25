@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - ToyBommaHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1 class="logo">ToyBommaHub</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="admin-panel">
+    <div class="admin-card">
+        <h2>🎬 Add New Movie</h2>
+
+        <input type="text" id="movieName" placeholder="Movie Name">
+        <input type="text" id="movieRelease" placeholder="Release Date">
+        <input type="text" id="movieDesc" placeholder="Description">
+
+        <button onclick="addMovie()" class="admin-btn">Add Movie</button>
+    </div>
+
+    <div class="admin-movie-list">
+        <h2>📃 Added Movies</h2>
+        <div id="movieList"></div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

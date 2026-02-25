@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: #e50914;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #e50914;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  background-color: #000;
+  background-image: linear-gradient(to right, black 40%, transparent),
+                    url("images/sirai.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+/* Movie Sections */
+.movies,
+.upcoming,
+.reviews {
+  padding: 40px 50px;
+}
+
+.movie-container,
+.upcoming-container,
+.reviews-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.trailer-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.trailer-section iframe {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+@media(max-width:768px) {
+    .trailer-section iframe {
+        width: 90%;
+        height: auto;
+    }
+}
+.movie-card,
+.upcoming-card,
+.review-card {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.movie-card img,
+.upcoming-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card:hover,
+.upcoming-card:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+button,
+.book-btn {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: black;
+  margin-top: 40px;
+}
+.reviews, 
+.contact {
+  padding: 60px 50px;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.contact {
+  background-color: #1a1a1a;
+  margin-top: 40px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: black;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: red;
+}
+
+.logo {
+    color: red;
+    font-size: 24px;
+}
+.movie-row {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card img {
+    width: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.movie-card img:hover {
+    transform: scale(1.1);
+}
